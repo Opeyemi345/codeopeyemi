@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <small class="message">message</small>
+      <form class="form">
+        <h1 class="title">Add task</h1>
+
+        <input type="text" placeholder="Add a task" id="addTask-input" />
+        <input type="submit" value="add task" id="submit" />
+      </form>
+
+      <section class="listSection">
+        <h2>
+          Task list
+          <span class="searchIcon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </h2>
+        <input type="text" id="search-input" placeholder="Search by task..." />
+        <ul class="taskUl"></ul>
+        <button class="delete-All-Btn">Delete all</button>
+      </section>
+    </div>
+    <script src="/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f9dc233011.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

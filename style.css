@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: white;
+  --secondaryColor: black;
+  --buttonColor: green;
+}
+body {
+  background-color: var(--primaryColor);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 3rem;
+  transition: 0.98s;
+}
+.form,
+.listSection {
+  width: 30%;
+  box-shadow: 2.5px 5px 10px black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid gray;
+  font-size: 18px;
+}
+input[type="submit"] {
+  width: 40%;
+  background-color: var(--buttonColor);
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.listSection .taskUl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.listSection .taskUl li {
+  list-style: none;
+  border: 2px solid var(--secondaryColor);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listSection .taskUl li p {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.listSection .taskUl li p:hover {
+  scale: 1.4;
+}
+.delete-All-Btn {
+  width: 30%;
+  border: none;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 10px;
+  border-radius: 5px;
+}
+.message {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--primaryColor);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  width: 30%;
+  visibility: hidden;
+}
+.listSection h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search-input {
+  display: visible;
+}
+deleteAll {
+  color: palevioletred;
+  font-size: 20px;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: peachpuff;
+  border-radius: 1rem;
+  border-width: 0;
+  padding: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .form,
+  .listSection {
+    width: 80%;
+  }
+  .listSection {
+    width: 80%;
+    background-color: var(--primaryColor);
+  }
+  .message {
+    width: 80%;
+  }
+}
